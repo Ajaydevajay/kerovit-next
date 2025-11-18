@@ -60,13 +60,14 @@
   }
   
   .thumbswiper {
-    width: 400px;
+    width: 500px;
   }
   
   .thumbwrapper {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: fit-content;
   }
   
   .thumbimage {
@@ -175,5 +176,6 @@
     right: 50%;
     z-index: 9;
     transform: translate(50%, 10%);
+    width: fit-content;
   }
 }

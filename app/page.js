@@ -1,4 +1,5 @@
 import HomeImageslider from "@/components/HomeImageSlider/HomeImageSlider";
+import Newcontact from "@/components/HomeImageSlider/NewContact/NewContact";
 import SecondSectionSlider from "@/components/HomeImageSlider/SecondSectionSlider/SecondSectionSlider";
 import Image from "next/image";
 import { Fragment } from "react";
@@ -14,9 +15,9 @@ export default function Home() {
       <section className="flex flex-col items-center justify-center text-center py-[64px] md:py-[124px] px-4">
         <h1 className="section_1_header">Kerovit Experience Center, Bhiwadi</h1>
         <p className="section_1_description">Open Today: 10:00 AM to 7:00 PM</p>
-        <div className="button1 mt-[40px]">
+        <button className="button1 mt-[40px]">
           <span className="btn-text">Book a Tour</span>
-        </div>
+        </button>
       </section>
 
       <HomeImageslider />
@@ -32,13 +33,18 @@ export default function Home() {
             visit.
           </p>
           <p className="section_3_description mt-[16px]">
-            Discover the new Roca Showroom in Jakarta. Roca Experience Center
-            Indonesia is the new center of innovative bathroom concepts and
-            bathroom inspiration. The Roca Experience Center features various
-            types of complete bathroom products that prioritize design, comfort,
-            functionality, and sustainable solutions.
+            Step into thoughtfully designed spaces that let you experience every
+            product as it was meant to be—installed, illuminated, and alive
+            within a real environment. Move through full bathroom setups,
+            discover textures and finishes in natural light, and see how design,
+            colour, and form come together. Each display helps you imagine
+            possibilities for your own home, turning ideas into something you
+            can feel, touch, and picture clearly. In every corner, inspiration
+            finds you effortlessly.
           </p>
-          <button className="button1 mt-[24px]">Book a Tour</button>
+          <button className="button1 mt-[24px]">
+            <span className="btn-text">Book a Tour</span>
+          </button>
         </div>
 
         <div className="md:w-1/2 space-y-8">
@@ -94,86 +100,13 @@ export default function Home() {
         </div>
       </section>
       <SecondSectionSlider />
+
       <section className="mx-auto pt-[124px] pb-[192px] px-6 md:px-12 flex flex-col md:flex-row items-start gap-12">
         <div className="w-full md:w-1/2 space-y-8">
           <div className="md:w-[70%]">
             <h2 className="section_4_heading mb-[32px]">Book a Tour</h2>
 
-            <form className="">
-              <div className="relative z-0 w-full mb-5 group">
-                <input
-                  type="text"
-                  name="floating_name"
-                  id="floating_name"
-                  className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 peer"
-                  placeholder=" "
-                  required
-                />
-                <label
-                  htmlFor="floating_name"
-                  className="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-gray-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
-                >
-                  Full Name
-                </label>
-              </div>
-
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="relative z-0 w-full mb-5 group">
-                  <input
-                    type="email"
-                    name="floating_email"
-                    id="floating_email"
-                    className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 peer"
-                    placeholder=" "
-                    required
-                  />
-                  <label
-                    htmlFor="floating_email"
-                    className="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-gray-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
-                  >
-                    Email
-                  </label>
-                </div>
-
-                <div className="relative z-0 w-full mb-5 group">
-                  <input
-                    type="tel"
-                    name="floating_phone"
-                    id="floating_phone"
-                    className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 peer"
-                    placeholder=" "
-                    required
-                  />
-                  <label
-                    htmlFor="floating_phone"
-                    className="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-gray-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
-                  >
-                    10-digit Phone
-                  </label>
-                </div>
-              </div>
-
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div>
-                  <label className="block text-gray-600 mb-1">City</label>
-                  <select className="w-full border-b text-gray-500 border-gray-300 focus:border-gray-800 outline-none py-2 bg-transparent">
-                    <option value="">Select City</option>
-                    <option>Jaipur</option>
-                    <option>Mumbai</option>
-                    <option>Delhi</option>
-                  </select>
-                </div>
-              </div>
-
-              <p className="text-sm text-gray-500 leading-relaxed mt-[32px]">
-                By submitting this form you are allowing our lorem ipsum team to
-                contact you. Lorem ipsum disclaimer lorem ipsum.
-              </p>
-
-              <button type="submit" className="button1 mt-[16px]">
-                Book
-              </button>
-            </form>
+            <Newcontact />
           </div>
         </div>
 

@@ -270,7 +270,7 @@ select {
 }
 
 .thumbswiper {
-  width: 400px;
+  width: 700px;
 }
 
 .thumbwrapper {
@@ -414,6 +414,14 @@ select {
 
 .text-gray-900 {
   color: #979795;
+}
+
+.bottom-text-design {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 170%;
+  color: #979795;
+  letter-spacing: 1%;
 }
 /* .swiper-button-custom:hover {
         background: rgba(255, 255, 255, 1);
