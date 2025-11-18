@@ -1,174 +1,164 @@
 .heroslider {
-    position: relative;
-    width: 100%;
-    height: calc(100vh - 80px);
-    overflow: hidden;
-  }
-  
-  .mainswiper,
-  .mainswiper .swiper-slide {
-    width: 100%;
-    height: 100%;
-  }
-  
-  .heroslide {
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-  }
-  
-  .herocontent {
-    position: absolute;
-    top: 50%;
-    left: 10%;
-    transform: translateY(-50%);
-    color: white;
-    max-width: 450px;
-  }
-  
-  .herocontent h2 {
-    font-size: 4rem;
-    font-weight: 300;
-  }
-  
-  .herocontent p {
-    font-size: 1.1rem;
-    margin: 20px 0;
-  }
-  
-  .herobtn {
-    color: white;
-    font-weight: 500;
-    text-decoration: none;
-    border-bottom: 1px solid #fff;
-    transition: 0.3s;
-  }
-  
-  .herobtn:hover {
-    color: #f0c080;
-    border-color: #f0c080;
-  }
-  
-  /* Thumbnails */
-  .thumbscontainer {
-    position: absolute;
-    bottom: 64px;
-    right: 88px;
-    z-index: 999;
-  }
-  
-  .thumbswiper {
-    width: 500px;
-  }
-  
-  .thumbwrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: fit-content;
-  }
-  
-  .thumbimage {
-    position: relative;
-    width: 100px;
-    height: 100px;
-    overflow: visible;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
- 
-  .thumbimage::before {
-    content: "";
-    position: absolute;
-    top: 4px;
-    left: 4px;
-    width: 94px;
-    height: 94px;
-    border: 2px solid rgba(255, 255, 255, 0.3); /* faint static border */
-    box-sizing: border-box;
-    z-index: 1;
-  }
-  
-  
-  .thumbimage img {
-    width: 80px;
-    height: 80px;
-    display: block;
-    object-fit: cover;
-    z-index: 2;
-  }
- 
- 
-  
-  
- 
- 
-  /* SVG overlay */
-  .progresssvg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    z-index: 3;
-  }
-  
-  /* The square outline path */
-  .progressrect {
-    fill: none;
-    stroke: #ffffff;
-    stroke-width: 2;
-    stroke-dasharray: 440;
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 80px);
+  overflow: hidden;
+}
+
+.mainswiper,
+.mainswiper .swiper-slide {
+  width: 100%;
+  height: 100%;
+}
+
+.heroslide {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.herocontent {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  color: white;
+  max-width: 450px;
+}
+
+.herocontent h2 {
+  font-size: 4rem;
+  font-weight: 300;
+}
+
+.herocontent p {
+  font-size: 1.1rem;
+  margin: 20px 0;
+}
+
+.herobtn {
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+  border-bottom: 1px solid #fff;
+  transition: 0.3s;
+}
+
+.herobtn:hover {
+  color: #f0c080;
+  border-color: #f0c080;
+}
+
+/* Thumbnails */
+.thumbscontainer {
+  position: absolute;
+  bottom: 64px;
+  right: 88px;
+  z-index: 999;
+}
+
+.thumbswiper {
+  width: 500px;
+}
+
+.thumbwrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+}
+
+.thumbimage {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  overflow: visible;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.thumbimage::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 94px;
+  height: 94px;
+  border: 2px solid rgba(255, 255, 255, 0.3); /* faint static border */
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.thumbimage img {
+  width: 80px;
+  height: 80px;
+  display: block;
+  object-fit: cover;
+  z-index: 2;
+}
+
+/* SVG overlay */
+.progresssvg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 3;
+}
+
+/* The square outline path */
+.progressrect {
+  fill: none;
+  stroke: #ffffff;
+  stroke-width: 2;
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+  stroke-linejoin: round;
+  filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.6)); /* subtle glow */
+}
+
+/* Animation */
+.progressAnim {
+  animation: progressAnim 5s linear forwards;
+}
+
+@keyframes progressAnim {
+  from {
     stroke-dashoffset: 440;
-    stroke-linejoin: round;
-    filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.6)); /* subtle glow */
   }
-  
-  
-  
-  /* Animation */
-  .progressAnim {
-    animation: progressAnim 5s linear forwards;
+  to {
+    stroke-dashoffset: 0;
   }
-  
-  @keyframes progressAnim {
-    from {
-      stroke-dashoffset: 440;
-    }
-    to {
-      stroke-dashoffset: 0;
-    }
-  }
-  
+}
+
+.swiper-backface-hidden .swiper-slide {
+  margin-right: 0px !important;
+}
+
 /* -----------------------------
    RESPONSIVE
 ----------------------------- */
- 
-   @media (max-width: 1560px) {
-  
+
+@media (max-width: 1560px) {
 }
- 
+
 @media (max-width: 1440px) {
- 
 }
- 
+
 @media (max-width: 1280px) {
-  
 }
- 
+
 @media (max-width: 1024px) {
- 
 }
- 
+
 @media (max-width: 768px) {
- 
-  
 }
- 
+
 @media (max-width: 640px) {
   .thumbscontainer {
     position: absolute;
