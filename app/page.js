@@ -12,7 +12,7 @@ export default function Home() {
           <img src="./Group.png" alt="Logo" />
         </div>
       </header>
-      <section className="flex flex-col items-center justify-center text-center section_padding_px py-[64px] md:py-[124px] px-4">
+      <section className="flex flex-col items-center justify-center text-center section_padding_px section_padding_py px-4">
         <h1 className="section_1_header">Kerovit Experience Center, Bhiwadi</h1>
         <p className="section_1_description">Open Today: 10:00 AM to 7:00 PM</p>
         <button className="button1 mt-[40px]">
@@ -21,7 +21,7 @@ export default function Home() {
       </section>
 
       <HomeImageslider />
-      <section className="mx-auto py-[124px] section_padding_px flex flex-col md:flex-row justify-between gap-12">
+      <section className="mx-auto section_padding_py section_padding_px flex flex-col md:flex-row justify-between gap-12">
         <div className="md:w-2/3">
           <h2 className="section_3_header">We're Here When You Are</h2>
           <p className="section_3_description">
@@ -111,7 +111,7 @@ export default function Home() {
       </section>
       <SecondSectionSlider />
 
-      <section className="mx-auto pt-[124px] pb-[192px] section_padding_px px-6 md:px-12 flex flex-col md:flex-row items-start gap-12">
+      <section className="mx-auto pt-[104] md:pt-[124px]   pb-[124px]   mb:pb-[192px] section_padding_px px-6 md:px-12 flex flex-col md:flex-row items-start gap-12">
         <div className="w-full lg:w-1/2 space-y-8">
           <div className="lg:w-[70%] ">
             <h2 className="section_4_heading mb-[32px]">Book a Tour</h2>
@@ -152,7 +152,7 @@ export default function Home() {
 
           <div className="flex flex-col md:flex-row justify-between">
             <div className="visible md:hidden copyright_text">Copyright</div>
-            <div className="text-center md:text-left mb-4 md:mb-0">
+            <div className="text-center md:text-left ">
               <p className="footer_label_second text-left md:text-center">
                 Download our Customer Care App for more
               </p>
@@ -176,7 +176,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className=" mb-4 md:mb-0 hidden invisible md:visible md:block text-[14px] text-[#979795]">
+            <div className="  hidden invisible md:visible md:block text-[14px] text-[#979795]">
               <span className="">Copyright</span> © 2025 KEROVIT
             </div>
 
