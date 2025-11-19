@@ -54,7 +54,7 @@ h1 h2 {
   font-size: var(--fs-md);
   line-height: var(--lh-loose);
   color: var(--color-dark);
-  letter-spacing: 0.5px;
+  letter-spacing: 2%;
   margin-top: 24px;
 }
 
@@ -138,6 +138,10 @@ h1 h2 {
   cursor: pointer;
   position: relative;
   transition: background-color 0.3s ease;
+}
+.button1:hover {
+  background-color: #456595; /* black */
+  color: #fff; /* white text */
 }
 
 /* text wrapper */
@@ -232,9 +236,11 @@ select {
     line-height: var(--lh-loose);
     color: var(--color-sm-black);
     padding-bottom: 0px;
+    letter-spacing: 1%;
   }
   .section_3_description {
     font-weight: 300;
+    font-family: var(--font-tertiary);
     font-size: var(--fs-xs);
     line-height: var(--lh-loose);
     color: var(--color-dark);
