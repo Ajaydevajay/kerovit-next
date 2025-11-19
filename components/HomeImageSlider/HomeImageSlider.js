@@ -16,28 +16,28 @@ export default function HomeImageslider() {
       id: 1,
       img: "/assets/landing-page/bangalore.png",
       title: "01",
-      desc: "Kerovit Experiece Center.",
+      desc: "Kerovit Experiece Center,",
       location: "Banglore",
     },
     {
       id: 2,
       img: "/assets/landing-page/bhopal.png",
       title: "02",
-      desc: "Kerovit Experiece Center.",
+      desc: "Kerovit Experiece Center,",
       location: "Bhopal",
     },
     {
       id: 3,
       img: "/assets/landing-page/chennai.png",
       title: "03",
-      desc: "Kerovit Experiece Center.",
+      desc: "Kerovit Experiece Center,",
       location: "Chennai",
     },
     {
       id: 4,
       img: "/assets/landing-page/mumbai.png",
       title: "04",
-      desc: "Kerovit Experiece Center.",
+      desc: "Kerovit Experiece Center,",
       location: "Mumbai",
     },
   ];
@@ -135,7 +135,6 @@ export default function HomeImageslider() {
     };
   }, [thumbsSwiper, mainSwiper]);
 
-  console.log(currentIndex, "currentIndex line no 135");
   // const res = await fetch("https://apicms.ecollat.com/api/homepage",
   // {
   //   headers: {
@@ -159,6 +158,7 @@ export default function HomeImageslider() {
           thumbs={{ swiper: thumbsSwiper }}
           onSwiper={setMainSwiper}
           className={style.mainswiper}
+          
         >
           {slides.map((slide) => (
             <div className="relative">
@@ -167,10 +167,6 @@ export default function HomeImageslider() {
                   className={style.heroslide}
                   style={{ backgroundImage: `url(${slide.img})` }}
                 ></div>
-                <div className="absolute  bottom-[180px]  right-[17%] m z-40">
-                  <div className="text-design">{slide.title}</div>
-                  <div className="text-design">{slide.desc}</div>
-                </div>
               </SwiperSlide>
             </div>
           ))}
@@ -178,6 +174,13 @@ export default function HomeImageslider() {
 
         {/* Thumbnail Swiper */}
         <div className={style.thumbscontainer} id="homecontainslide">
+          <div>
+            {" "}
+            <div className="text-design"> {slides[currentIndex].title}</div>
+            <div className="text-design">
+              {slides[currentIndex].desc} {slides[currentIndex].location}
+            </div>
+          </div>
           <Swiper
             onSwiper={setThumbsSwiper}
             slidesPerView={4}
