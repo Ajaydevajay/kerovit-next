@@ -79,7 +79,7 @@ export default function Home() {
                     Open Map
                     <span
                       className="
-        absolute left-0 -bottom-[2px] h-[2px] w-full bg-[#003366]
+        absolute left-0 bottom-[-6px] h-[1px] w-full bg-[#003366]
         origin-left scale-x-0 transition-transform duration-300 
         group-hover:scale-x-100
       "
@@ -112,8 +112,8 @@ export default function Home() {
       <SecondSectionSlider />
 
       <section className="mx-auto pt-[124px] pb-[192px] section_padding_px px-6 md:px-12 flex flex-col md:flex-row items-start gap-12">
-        <div className="w-full md:w-1/2 space-y-8">
-          <div className="md:w-[70%]">
+        <div className="w-full lg:w-1/2 space-y-8">
+          <div className="lg:w-[70%] ">
             <h2 className="section_4_heading mb-[32px]">Book a Tour</h2>
 
             <Newcontact />
@@ -121,15 +121,15 @@ export default function Home() {
         </div>
 
         <div
-          className="w-full md:w-1/2 aspect-[16/9]"
+          className="w-full md:w-1/2  hidden lg:block"
           style={{
             backgroundImage: `url(./assets/booktour.png)`,
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center",
             // width: "100%",
-            height: "100%",
-            aspectRatio: "16 / 9", // always rectangular ratio
+            height: "-webkit-fill-available",
+
             backgroundColor: "#D9D9D9",
           }}
         ></div>

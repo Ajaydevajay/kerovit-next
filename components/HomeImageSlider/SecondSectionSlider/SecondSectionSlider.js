@@ -76,7 +76,7 @@ const SecondSectionSlider = () => {
   }, []);
 
   return (
-    <section className={`${style.sectionpadd} section_padding_px  `}>
+    <section className={`${style.sectionpadd} section_padding_px overflow-auto  `}>
       <div className={`${style.swiperpadding}`}>
         <div
           className="section_3_header mb-[64px] pb-[0]"

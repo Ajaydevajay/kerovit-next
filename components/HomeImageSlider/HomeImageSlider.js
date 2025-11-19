@@ -177,7 +177,7 @@ export default function HomeImageslider() {
           <div>
             {" "}
             <div className="text-design"> {slides[currentIndex].title}</div>
-            <div className="text-design">
+            <div className="text-design pb-[16px]">
               {slides[currentIndex].desc} {slides[currentIndex].location}
             </div>
           </div>

@@ -24,11 +24,11 @@ export default function Newcontact() {
 
   return (
     <section>
-      <div className=" gap-16 sm:gap-12 mt-8 sm:mt-16">
+      <div className=" gap-16 sm:gap-12 ">
         {/* RIGHT SIDE - FORM */}
         <div className=" w-full ">
-          <form onSubmit={handleSubmit} className="mb-[20px] desctext">
-            <div className="relative mb-3">
+          <form onSubmit={handleSubmit} className=" desctext">
+            <div className="relative mb-[20px]">
               <input
                 type="text"
                 name="name"
@@ -141,7 +141,7 @@ export default function Newcontact() {
               regarding your inquiry and the next steps.
             </p>
 
-            <button className="button1 mt-[16px]">
+            <button className="button1 ">
               <span className="btn-text">Book</span>
             </button>
           </form>
