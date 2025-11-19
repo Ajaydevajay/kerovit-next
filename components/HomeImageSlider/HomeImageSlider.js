@@ -15,26 +15,26 @@ export default function HomeImageslider() {
     {
       id: 1,
       img: "/assets/landing-page/bangalore.png",
-      title: "NEW ARRIVAL",
-      desc: "Timeless in design and function, our new basins enrich bathrooms with elegance and distinction.",
+      title: "01",
+      desc: "Kerovit Experiece Center, Chennai.",
     },
     {
       id: 2,
       img: "/assets/landing-page/bhopal.png",
-      title: "ELEGANT DESIGN",
-      desc: "Crafted with precision and grace for modern spaces.",
+      title: "02",
+      desc: "Kerovit Experiece Center, Bhopal.",
     },
     {
       id: 3,
       img: "/assets/landing-page/chennai.png",
-      title: "PREMIUM COLLECTION",
-      desc: "Luxury meets minimalism in our latest bathroom collection.",
+      title: "03",
+      desc: "Kerovit Experiece Center, Chennai.",
     },
     {
       id: 4,
       img: "/assets/landing-page/mumbai.png",
-      title: "PREMIUM COLLECTION",
-      desc: "Luxury meets minimalism in our latest bathroom collection.",
+      title: "04",
+      desc: "Kerovit Experiece Center, Mumbai.",
     },
   ];
 
@@ -103,12 +103,18 @@ export default function HomeImageslider() {
           className={style.mainswiper}
         >
           {slides.map((slide) => (
-            <SwiperSlide key={slide.id}>
-              <div
-                className={style.heroslide}
-                style={{ backgroundImage: `url(${slide.img})` }}
-              ></div>
-            </SwiperSlide>
+            <div className="relative">
+              <SwiperSlide key={slide.id}>
+                <div
+                  className={style.heroslide}
+                  style={{ backgroundImage: `url(${slide.img})` }}
+                ></div>
+                <div className="absolute  bottom-[180px]  right-[17%] m z-40">
+                  <div className="text-design">{slide.title}</div>
+                  <div className="text-design">{slide.desc}</div>
+                </div>
+              </SwiperSlide>
+            </div>
           ))}
         </Swiper>
 

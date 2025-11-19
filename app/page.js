@@ -73,10 +73,20 @@ export default function Home() {
                 </div>
                 <a
                   href="#"
-                  className="section_3_mapped_view flex gap-2 items-center mt-[24px]"
+                  className="section_3_mapped_view flex items-center gap-2 mt-[24px] group cursor-pointer"
                 >
-                  Open Map
-                  <span>
+                  <span className="relative inline-block leading-none w-fit">
+                    Open Map
+                    <span
+                      className="
+        absolute left-0 -bottom-[2px] h-[2px] w-full bg-[#003366]
+        origin-left scale-x-0 transition-transform duration-300 
+        group-hover:scale-x-100
+      "
+                    />
+                  </span>
+
+                  <span className="flex items-center transition-transform duration-300 group-hover:translate-x-1">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="8"

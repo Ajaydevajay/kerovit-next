@@ -47,7 +47,6 @@ h1 h2 {
   letter-spacing: 1%;
 }
 
-
 /* ===== Section 1 ===== */
 
 .section_1_description {
@@ -95,6 +94,8 @@ h1 h2 {
   line-height: var(--lh-loose);
   color: var(--color-button-bg);
 }
+
+
 /* ===== Labels ===== */
 .label_heading {
   font-weight: 400;
@@ -157,6 +158,10 @@ h1 h2 {
   background-color: currentColor;
   transition: width 0.3s ease;
 }
+
+
+
+
 
 /* animate underline */
 .button1:hover .btn-text::after {
@@ -363,6 +368,14 @@ select {
 
 .linkonhovertext:hover .arrow {
   transform: translateX(5px);
+}
+
+.text-design {
+  font-weight: 500;
+  font-size: var(--fs-xs);
+  line-height: var(--lh-loose);
+  letter-spacing: 2%;
+  color: #ffffff;
 }
 
 @keyframes progressAnim {

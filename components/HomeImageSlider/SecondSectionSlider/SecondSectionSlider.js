@@ -79,8 +79,7 @@ const SecondSectionSlider = () => {
     <section className={`${style.sectionpadd}  pl-[64px]`}>
       <div className={`${style.swiperpadding}`}>
         <div className="section_3_header mb-[64px]">
-          Discover lorem ipsum when you <br />
-          visit our Bhiwadi Center
+          Discover a world crafted <br /> for the way you live
         </div>
 
         <Swiper
@@ -111,7 +110,6 @@ const SecondSectionSlider = () => {
 
                 <div className="pt-3 sm:pt-4 flex items-center justify-between">
                   <p className="small text-[14px]">{slide.title}</p>
-                
                 </div>
               </div>
             </SwiperSlide>
