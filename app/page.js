@@ -135,7 +135,7 @@ export default function Home() {
         ></div>
       </section>
 
-      <footer className="border-t border-[#E1E6E5] py-[80px] section_padding_px md:px-12">
+      <footer className="border-t border-[#E1E6E5] section_padding_py section_padding_px md:px-12">
         <div className="mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
             <div>
