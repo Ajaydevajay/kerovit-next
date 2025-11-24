@@ -17,32 +17,32 @@ const slidesData = [
     title: "Faucet",
     desc: "Bib Tap with Flange",
     link: "/",
-    image: "/assets/landing-page/faucet.png",
+    image: "/assets/landing-page/faucet.webp",
   },
   {
     title: "Shower",
     link: "/",
-    image: "/assets/landing-page/shower.png",
+    image: "/assets/landing-page/shower.webp",
   },
   {
     title: "Basin",
     link: "/",
-    image: "/assets/landing-page/basin.png",
+    image: "/assets/landing-page/basin.webp",
   },
   {
     title: "Toilet",
     link: "/",
-    image: "/assets/landing-page/toilet.png",
+    image: "/assets/landing-page/toilet.webp",
   },
   {
     title: "Bathroom Furniture",
     link: "/",
-    image: "/assets/landing-page/bathroom furniture.png",
+    image: "/assets/landing-page/bathroom_furniture.webp",
   },
   {
     title: "Accessories",
     link: "/",
-    image: "/assets/landing-page/accessories.png",
+    image: "/assets/landing-page/accessories.webp",
   },
 ];
 

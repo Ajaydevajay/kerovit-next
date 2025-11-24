@@ -14,28 +14,28 @@ export default function HomeImageslider() {
   const slides = [
     {
       id: 1,
-      img: "/assets/landing-page/bangalore.png",
+      img: "/assets/landing-page/bangalore.webp",
       title: "01",
       desc: "Kerovit Experiece Center,",
       location: "Banglore",
     },
     {
       id: 2,
-      img: "/assets/landing-page/bhopal.png",
+      img: "/assets/landing-page/bhopal.webp",
       title: "02",
       desc: "Kerovit Experiece Center,",
       location: "Bhopal",
     },
     {
       id: 3,
-      img: "/assets/landing-page/chennai.png",
+      img: "/assets/landing-page/chennai.webp",
       title: "03",
       desc: "Kerovit Experiece Center,",
       location: "Chennai",
     },
     {
       id: 4,
-      img: "/assets/landing-page/mumbai.png",
+      img: "/assets/landing-page/mumbai.webp",
       title: "04",
       desc: "Kerovit Experiece Center,",
       location: "Mumbai",
