@@ -466,6 +466,14 @@ select {
         height: 20px;
       } */
 
+      @media (max-width: 1024px) {
+        .section_padding_px {
+          padding-right: 24px;
+          padding-left: 24px;
+        }
+
+      }
+
 @media (max-width: 640px) {
   .sectionpadd {
     padding-top: 104px;

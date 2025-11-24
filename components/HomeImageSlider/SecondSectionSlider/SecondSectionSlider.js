@@ -75,10 +75,10 @@ const SecondSectionSlider = () => {
   }, []);
 
   return (
-    <section className={`${style.sectionpadd} section_padding_px overflow-auto  `}>
+    <section className={`${style.sectionpadd} section_padding_px overflow-hidden  `}>
       <div className={`${style.swiperpadding}`}>
         <div
-          className="section_3_header mb-[64px] pb-[0]"
+          className="section_3_header mb-16 pb-0"
           style={{
             paddingBottom: 0,
           }}
@@ -103,7 +103,7 @@ const SecondSectionSlider = () => {
             <SwiperSlide key={index}>
               <div className="group">
                 <div className="relative w-full flex items-center justify-center bg-[#E1E6E5] overflow-hidden">
-                  <div className={` ${style.shine} aspect-[3/4]  `}>
+                  <div className={` ${style.shine} aspect-3/4  `}>
                     <img
                       src={slide.image}
                       alt={slide.title}

@@ -7,7 +7,7 @@ import { Fragment } from "react";
 export default function Home() {
   return (
     <Fragment>
-      <header className="flex items-center justify-between px-[24px] md:px-[64px] py-[26px] border-b border-gray-200">
+      <header className="flex items-center justify-between px-4 md:px-6 lg:px-16  py-[26px] border-b border-gray-200">
         <div className="flex items-center">
           <img src="./Group.png" alt="Logo" />
         </div>
@@ -32,7 +32,7 @@ export default function Home() {
             visualize your perfect bathroom. We're here to help whenever you
             visit.
           </p>
-          <p className="section_3_description mt-[16px]">
+          <p className="section_3_description mt-4">
             Step into thoughtfully designed spaces that let you experience every
             product as it was meant to be—installed, illuminated, and alive
             within a real environment. Move through full bathroom setups,
@@ -42,7 +42,7 @@ export default function Home() {
             can feel, touch, and picture clearly. In every corner, inspiration
             finds you effortlessly.
           </p>
-          <button className="button1 mt-[24px]">
+          <button className="button1 mt-6">
             <span className="btn-text">Book a Tour</span>
           </button>
         </div>
@@ -50,20 +50,20 @@ export default function Home() {
         <div className="md:w-1/2 space-y-8">
           <div className="flex md:justify-end">
             <div>
-              <h3 className="section_3_subheading mb-[32px] text-[24px]">
+              <h3 className="section_3_subheading mb-8 text-[24px]">
                 Details
               </h3>
               <div className="text-[#979795]">
                 <div>
                   <h4 className="label_heading">Contact</h4>
-                  <p className="label_discription mt-[8px]">+91 999 9999 991</p>
+                  <p className="label_discription mt-2">+91 999 9999 991</p>
                 </div>
-                <div className="mt-[32px]">
+                <div className="mt-8">
                   <h4 className="label_heading">Address</h4>
-                  <p className="label_discription mt-[8px]">
+                  <p className="label_discription mt-2">
                     Kerovit Experience Center Bhiwadi
                   </p>
-                  <p className=" label_discription mt-[16px] text-[14px]">
+                  <p className=" label_discription mt-4 text-[14px]">
                     119 Third Floor, Farah Icon, Laal Bagh Main Rd,
                     <br />
                     opp. New Passport Kendra, Bhiwadi,
@@ -73,13 +73,13 @@ export default function Home() {
                 </div>
                 <a
                   href="#"
-                  className="section_3_mapped_view flex items-center gap-2 mt-[24px] group cursor-pointer"
+                  className="section_3_mapped_view flex items-center gap-2 mt-6 group cursor-pointer"
                 >
                   <span className="relative inline-block leading-none w-fit">
                     Open Map
                     <span
                       className="
-        absolute left-0 bottom-[-6px] h-[1px] w-full bg-[#003366]
+        absolute left-0 -bottom-1.5 h-px w-full bg-[#003366]
         origin-left scale-x-0 transition-transform duration-300 
         group-hover:scale-x-100
       "
@@ -135,7 +135,7 @@ export default function Home() {
         ></div>
       </section>
 
-      <footer className="border-t border-[#E1E6E5] py-[80px] md:px-12">
+      <footer className="border-t border-[#E1E6E5] py-20  px-4 md:px-6 lg:px-16">
         <div className="mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
             <div>

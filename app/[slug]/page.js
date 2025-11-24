@@ -57,7 +57,7 @@ export default async function Page({ params }) {
 
 
 
-<header className="flex items-center justify-between px-[24px] md:px-[64px] py-[26px] border-b border-gray-200">
+<header className="flex items-center justify-between px-6 md:px-16 py-[26px] border-b border-gray-200">
         <div className="flex items-center">
           <img src="./Group.png" alt="Logo" />
         </div>
@@ -65,7 +65,7 @@ export default async function Page({ params }) {
       <section className="flex flex-col items-center justify-center text-center section_padding_px section_padding_py px-4">
         <h1 className="section_1_header">{storeData?.content?.storeName}</h1>
         <p className="section_1_description">{storeData?.content?.storetime}</p>
-        <button className="button1 mt-[40px]">
+        <button className="button1 mt-10">
           <span className="btn-text">Book a Tour</span>
         </button>
       </section>
@@ -85,7 +85,7 @@ export default async function Page({ params }) {
             visualize your perfect bathroom. We're here to help whenever you
             visit.
           </p>
-          <p className="section_3_description mt-[16px]">
+          <p className="section_3_description mt-4">
             Step into thoughtfully designed spaces that let you experience every
             product as it was meant to be—installed, illuminated, and alive
             within a real environment. Move through full bathroom setups,
@@ -95,7 +95,7 @@ export default async function Page({ params }) {
             can feel, touch, and picture clearly. In every corner, inspiration
             finds you effortlessly.
           </p>
-          <button className="button1 mt-[24px]">
+          <button className="button1 mt-6">
             <span className="btn-text">Book a Tour</span>
           </button>
         </div>
@@ -103,32 +103,32 @@ export default async function Page({ params }) {
         <div className="md:w-1/2 space-y-8">
           <div className="flex md:justify-end">
             <div>
-              <h3 className="section_3_subheading mb-[32px] text-[24px]">
+              <h3 className="section_3_subheading mb-8 text-[24px]">
                 Details
               </h3>
               <div className="text-[#979795]">
                 <div>
                   <h4 className="label_heading">Contact</h4>
-                  <p className="label_discription mt-[8px]">{storeData?.content?.storeContact}</p>
+                  <p className="label_discription mt-2">{storeData?.content?.storeContact}</p>
                 </div>
-                <div className="mt-[32px]">
+                <div className="mt-8">
                   <h4 className="label_heading">Address</h4>
-                  <p className="label_discription mt-[8px]">
+                  <p className="label_discription mt-2">
                   {storeData?.content?.shortAddress}
                   </p>
-                  <p className=" label_discription mt-[16px] text-[14px]">
+                  <p className=" label_discription mt-4 text-[14px]">
                   {storeData?.content?.fullAddress}
                   </p>
                 </div>
                 <a
                   href={storeData?.content?.locationMap} target="_blank"
-                  className="section_3_mapped_view flex items-center gap-2 mt-[24px] group cursor-pointer"
+                  className="section_3_mapped_view flex items-center gap-2 mt-6 group cursor-pointer"
                 >
                   <span className="relative inline-block leading-none w-fit">
                     Open Map
                     <span
                       className="
-        absolute left-0 bottom-[-6px] h-[1px] w-full bg-[#003366]
+        absolute left-0 -bottom-1.5 h-px w-full bg-[#003366]
         origin-left scale-x-0 transition-transform duration-300 
         group-hover:scale-x-100
       "
@@ -165,7 +165,7 @@ export default async function Page({ params }) {
 <section className="mx-auto pt-[104] md:pt-[124px]   pb-[124px]   mb:pb-[192px] section_padding_px px-6 md:px-12 flex flex-col md:flex-row items-start gap-12">
         <div className="w-full lg:w-1/2 space-y-8">
           <div className="lg:w-[70%] ">
-            <h2 className="section_4_heading mb-[32px]">Book a Tour</h2>
+            <h2 className="section_4_heading mb-8">Book a Tour</h2>
 
             <Newcontact />
           </div>
@@ -188,7 +188,7 @@ export default async function Page({ params }) {
 
 
 
-<footer className="border-t border-[#E1E6E5] py-[80px] md:px-12">
+<footer className="border-t border-[#E1E6E5] py-20  px-4 md:px-6 lg:px-16">
         <div className="mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
             <div>
