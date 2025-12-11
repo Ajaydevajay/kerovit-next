@@ -1,7 +1,9 @@
 import HomeImageslider from "@/components/HomeImageSlider/HomeImageSlider";
 import Newcontact from "@/components/HomeImageSlider/NewContact/NewContact";
 import SecondSectionSlider from "@/components/HomeImageSlider/SecondSectionSlider/SecondSectionSlider";
+import ScrollButton from "../components/Book/ScrollButton";
 import Image from "next/image";
+import Link from "next/link";
 import { Fragment } from "react";
 
 export default function Home() {
@@ -9,15 +11,17 @@ export default function Home() {
     <Fragment>
       <header className="flex items-center justify-between px-4 md:px-6 lg:px-16  py-[26px] border-b border-gray-200">
         <div className="flex items-center">
-          <img src="./Group.png" alt="Logo" />
+     <Link href="/">     <img src="./Group.png" alt="Logo" /></Link>
         </div>
       </header>
       <section className="flex flex-col items-center justify-center text-center section_padding_px section_padding_py px-4">
         <h1 className="section_1_header">Kerovit Experience Center, Bhiwadi</h1>
         <p className="section_1_description">Open Today: 10:00 AM to 7:00 PM</p>
-        <button className="button1 mt-[40px]">
+        {/* <button className="button1 mt-[40px]">
           <span className="btn-text">Book a Tour</span>
-        </button>
+        </button> */}
+
+<ScrollButton />
       </section>
 
       <HomeImageslider />
@@ -111,7 +115,7 @@ export default function Home() {
       </section>
       <SecondSectionSlider />
 
-      <section className="mx-auto pt-[104] md:pt-[124px]   pb-[124px]   mb:pb-[192px] section_padding_px px-6 md:px-12 flex flex-col md:flex-row items-start gap-12">
+      <section id="book_tour_section" className="mx-auto pt-[104] md:pt-[124px]   pb-[124px]   mb:pb-[192px] section_padding_px px-6 md:px-12 flex flex-col md:flex-row items-start gap-12">
         <div className="w-full lg:w-1/2 space-y-8">
           <div className="lg:w-[70%] ">
             <h2 className="section_4_heading mb-[32px]">Book a Tour</h2>

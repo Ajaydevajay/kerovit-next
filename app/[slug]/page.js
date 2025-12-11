@@ -3,6 +3,8 @@
 import HomeImageslider from "../../components/HomeImageSlider/HomeImageSlider";
 import SecondSectionSlider from "../../components/HomeImageSlider/SecondSectionSlider/SecondSectionSlider";
 import Newcontact from "../../components/HomeImageSlider/NewContact/NewContact";
+import Booktours from "@/components/Book/Booktours";
+import Link from "next/link";
 
 
 export async function generateStaticParams() {
@@ -65,9 +67,10 @@ export default async function Page({ params }) {
       <section className="flex flex-col items-center justify-center text-center section_padding_px section_padding_py px-4">
         <h1 className="section_1_header">{storeData?.content?.storeName}</h1>
         <p className="section_1_description">{storeData?.content?.storetime}</p>
-        <button className="button1 mt-10">
+        {/* <button className="button1 mt-10">
           <span className="btn-text">Book a Tour</span>
-        </button>
+        </button> */}
+        <Booktours />
       </section>
 
 
@@ -162,7 +165,7 @@ export default async function Page({ params }) {
 <SecondSectionSlider />
 
 
-<section className="mx-auto pt-[104] md:pt-[124px]   pb-[124px]   mb:pb-[192px] section_padding_px px-6 md:px-12 flex flex-col md:flex-row items-start gap-12">
+<section id="book_tours" className="mx-auto pt-[104] md:pt-[124px]   pb-[124px]   mb:pb-[192px] section_padding_px px-6 md:px-12 flex flex-col md:flex-row items-start gap-12">
         <div className="w-full lg:w-1/2 space-y-8">
           <div className="lg:w-[70%] ">
             <h2 className="section_4_heading mb-8">Book a Tour</h2>
