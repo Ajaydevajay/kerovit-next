@@ -48,7 +48,7 @@ export default async function Page({ params }) {
       (item) => item.content?.slug === slug
     );
   
-   console.log(storeData.content?.storeName, "lplp");
+  
   
     if (!storeData) {
       return <div>Store not found</div>;
