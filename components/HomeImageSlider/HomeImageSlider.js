@@ -14,28 +14,28 @@ export default function HomeImageslider() {
   const slides = [
     {
       id: 1,
-      img: "https://assets.cms.ecollat.com/locationpage/mumbai.webp",
+      img: "https://assets.cms.ecollat.com/locationpage/01/chennai.webp",
       title: "01",
       desc: "Kerovit Experiece Center,",
       location: "Banglore",
     },
     {
       id: 2,
-      img: "https://assets.cms.ecollat.com/locationpage/bangalore.webp",
+      img: "https://assets.cms.ecollat.com/locationpage/01/coaimbatore.webp",
       title: "02",
       desc: "Kerovit Experiece Center,",
       location: "Bhopal",
     },
     {
       id: 3,
-      img: "https://assets.cms.ecollat.com/locationpage/chennai.webp",
+      img: "https://assets.cms.ecollat.com/locationpage/01/kolkata_2.webp",
       title: "03",
       desc: "Kerovit Experiece Center,",
       location: "Chennai",
     },
     {
       id: 4,
-      img: "https://assets.cms.ecollat.com/locationpage/bhopal.webp",
+      img: "https://assets.cms.ecollat.com/locationpage/01/mumbai.webp",
       title: "04",
       desc: "Kerovit Experiece Center,",
       location: "Mumbai",
