@@ -77,8 +77,8 @@ export default async function Page({ params }) {
 
 
 <HomeImageslider />
-      <section className="mx-auto section_padding_py section_padding_px flex flex-col md:flex-row justify-between gap-12">
-        <div className="md:w-2/3">
+      <section className="mx-auto section_padding_py section_padding_px flex flex-col md:flex-row justify-between gap-20">
+        <div className="md:w-3/5">
           <h2 className="section_3_header">We're Here When You Are</h2>
           <p className="section_3_description">
             All our Experience Centers are open 7 days a week, from 10:00 AM to
@@ -103,8 +103,8 @@ export default async function Page({ params }) {
           </button>
         </div>
 
-        <div className="md:w-1/2 space-y-8">
-          <div className="flex md:justify-end">
+        <div className="md:w-2/5 space-y-8 flex justify-end">
+          <div className="flex md:justify-end w-full md:w-full lg:w-4/5">
             <div>
               <h3 className="section_3_subheading mb-8 text-[24px]">
                 Details
@@ -177,7 +177,7 @@ export default async function Page({ params }) {
         <div
           className="w-full md:w-1/2  hidden lg:block"
           style={{
-            backgroundImage: `url(./assets/booktour.webp)`,
+            backgroundImage: `url(https://assets.cms.ecollat.com/locationpage/category/booktour.webp)`,
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center",

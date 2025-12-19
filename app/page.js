@@ -127,7 +127,7 @@ export default function Home() {
         <div
           className="w-full md:w-1/2  hidden lg:block"
           style={{
-            backgroundImage: `url(./assets/booktour.png)`,
+            backgroundImage: `url(https://assets.cms.ecollat.com/locationpage/category/booktour.webp)`,
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center",
