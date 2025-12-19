@@ -17,21 +17,21 @@ export default function HomeImageslider() {
       img: "https://assets.cms.ecollat.com/locationpage/01/chennai.webp",
       title: "01",
       desc: "Kerovit Experiece Center,",
-      location: "Banglore",
+      location: "Chennai",
     },
     {
       id: 2,
       img: "https://assets.cms.ecollat.com/locationpage/01/coaimbatore.webp",
       title: "02",
       desc: "Kerovit Experiece Center,",
-      location: "Bhopal",
+      location: "Coaimbatore",
     },
     {
       id: 3,
       img: "https://assets.cms.ecollat.com/locationpage/01/kolkata_2.webp",
       title: "03",
       desc: "Kerovit Experiece Center,",
-      location: "Chennai",
+      location: "Kolkata",
     },
     {
       id: 4,
@@ -111,12 +111,13 @@ export default function HomeImageslider() {
         <Swiper
           modules={[Autoplay, Thumbs, EffectFade]}
           effect="fade"
+          fadeEffect={{ crossFade: true }}
           loop
           autoplay={{ delay: 10000, disableOnInteraction: false }}
           thumbs={{ swiper: thumbsSwiper }}
           onSwiper={setMainSwiper}
           className={style.mainswiper}
-          onSlideChange={(value) => setCurrentIndex(value?.activeIndex)}
+          onSlideChange={(swiper) => setCurrentIndex(swiper.realIndex)}
         >
           {slides.map((slide) => (
             <div className="relative">

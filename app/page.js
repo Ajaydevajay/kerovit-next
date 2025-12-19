@@ -118,7 +118,7 @@ export default function Home() {
       <section id="book_tour_section" className="mx-auto pt-[104] md:pt-[124px]   pb-[124px]   mb:pb-[192px] section_padding_px px-6 md:px-12 flex flex-col md:flex-row items-start gap-12">
         <div className="w-full lg:w-1/2 space-y-8">
           <div className="lg:w-[70%] ">
-            <h2 className="section_4_heading mb-[32px]">Book a Tour</h2>
+            <h2 className="section_4_heading mb-8">Book a Tour</h2>
 
             <Newcontact />
           </div>
@@ -147,36 +147,29 @@ export default function Home() {
             </div>
 
             <div className="md:text-right">
-              <p className="footer_label_first">support@kerovit.com</p>
-              <p className="footer_label_first mt-[1rem]">+91-9999999991</p>
+           <p className="footer_label_first">info@kerovit.com</p>
+              <p className="footer_label_first mt-4">1800 570 7800</p>
             </div>
           </div>
 
-          <hr className="my-[40px] border-[#3a7caa]" />
+          <hr className="my-10 border-[#3a7caa]" />
 
           <div className="flex flex-col md:flex-row justify-between">
             <div className="visible md:hidden copyright_text">Copyright</div>
             <div className="text-center md:text-left ">
               <p className="footer_label_second text-left md:text-center">
-                Download our Customer Care App for more
+                Follow Us
               </p>
-              <div className="flex gap-4 md:justify-center md:justify-start text-2xl pb-[32px] pt-[16px]">
-                <a href="#" className="text-gray-600 hover:text-gray-800">
-                  <img src="./assets/social-media/Frame 169.png" />
-                </a>
+              <div className="flex gap-4  md:justify-start text-2xl pt-[16px]">
+               
 
-                <a href="#" className="text-black hover:text-[#979795]">
-                  <img src="./assets/social-media/Frame 170.png" />
+                <a href="https://www.instagram.com/accounts/login/?next=%2Fkerovit.kajaria%2F&source=omni_redirect" target="_blank" className="text-black hover:text-[#979795]">
+                  <img src="/assets/social-media/instagram.svg" />
                 </a>
-                <a href="#" className="text-red-600 hover:text-red-800">
-                  <img src="./assets/social-media/Frame 171.png" />
+                <a href="https://in.pinterest.com/kerovit_bykajaria/" target="_blank" className="text-red-600 hover:text-red-800">
+                  <img src="/assets/social-media/pinterest.svg" />
                 </a>
-                <a href="#" className="text-[#979795] hover:text-gray-900">
-                  <img src="./assets/social-media/Frame 172.png" />
-                </a>
-                <a href="#" className="text-[#979795] hover:text-gray-900">
-                  <img src="./assets/social-media/Frame 173.png" />
-                </a>
+                
               </div>
             </div>
 
@@ -184,27 +177,7 @@ export default function Home() {
               <span className="">Copyright</span> © 2025 KEROVIT
             </div>
 
-            <div>
-              <p className="footer_label_second text-left md:text-center">
-                Download our Customer Care App for more
-              </p>
-              <div className="flex gap-3 pt-[16px]">
-                <a href="#">
-                  <img
-                    src="./assets/social-media/Googleplay-icon.png"
-                    alt="Google Play"
-                    className="h-10"
-                  />
-                </a>
-                <a href="#">
-                  <img
-                    src="./assets/social-media/apple-ios-icon.png"
-                    alt="App Store"
-                    className="h-10"
-                  />
-                </a>
-              </div>
-            </div>
+           
           </div>
         </div>
       </footer>

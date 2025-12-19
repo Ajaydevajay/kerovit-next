@@ -17,32 +17,32 @@ const slidesData = [
     title: "Faucet",
     desc: "Bib Tap with Flange",
     link: "/",
-    image: "/assets/landing-page/faucet.webp",
+    image: "https://assets.cms.ecollat.com/locationpage/category/product-category-image-faucet.webp",
   },
   {
     title: "Shower",
     link: "/",
-    image: "/assets/landing-page/shower.webp",
+    image: "https://assets.cms.ecollat.com/locationpage/category/product-category-image-shower.webp",
   },
   {
     title: "Basin",
     link: "/",
-    image: "/assets/landing-page/basin.webp",
+    image: "https://assets.cms.ecollat.com/locationpage/category/product-category-image-basin.webp",
   },
   {
     title: "Toilet",
     link: "/",
-    image: "/assets/landing-page/toilet.webp",
+    image: "https://assets.cms.ecollat.com/locationpage/category/product-category-image-toilet.webp",
   },
   {
     title: "Bathroom Furniture",
     link: "/",
-    image: "/assets/landing-page/bathroom_furniture.webp",
+    image: "https://assets.cms.ecollat.com/locationpage/category/product-category-image-bathroomfurniture.webp",
   },
   {
     title: "Accessories",
     link: "/",
-    image: "/assets/landing-page/accessories.webp",
+    image: "https://assets.cms.ecollat.com/locationpage/category/product-category-image-accessories.webp",
   },
 ];
 
@@ -107,7 +107,7 @@ const SecondSectionSlider = () => {
                     <img
                       src={slide.image}
                       alt={slide.title}
-                      className="object-contain w-full h-full transition-transform duration-300 group-hover:scale-125"
+                      className="object-contain w-full h-full transition-transform duration-300 "
                     />
                   </div>
                 </div>
