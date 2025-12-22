@@ -27,10 +27,12 @@
   --color-button-bg: #003366;
   --color-button-text: #ffffff;
   --color-faded-text: #666664;
+  --color-error-text: #B00003;
   --fs-lg: 40px;
   --fs-md: 14px;
   --fs-sm: 24px;
   --fs-xs: 14px;
+  --fs-xxs: 12px;
   --lh-tight: 140%;
   --lh-loose: 170%;
 }
@@ -48,6 +50,13 @@ h1 h2 {
 }
 
 /* ===== Section 1 ===== */
+
+.formerrortext{
+  font-weight: 400;
+  font-size: var( --fs-xxs);
+  line-height: var(--lh-tight);
+  color: var( --color-error-text);
+}
 
 .section_1_description {
   font-weight: 400;

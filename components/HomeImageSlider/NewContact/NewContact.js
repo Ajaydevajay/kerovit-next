@@ -63,7 +63,7 @@ export default function Newcontact() {
 
     // Final validation
     const errors = {};
-    if (!formData.fullName.trim()) errors.fullName = "Name is required";
+    if (!formData.fullName.trim()) errors.fullName = "Full Name is required";
     if (!formData.email.trim()) errors.email = "Email is required";
     else if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(formData.email))
       errors.email = "Please enter a valid email address";
@@ -118,20 +118,34 @@ export default function Newcontact() {
 
   return (
     <section>
-      <form onSubmit={handleSubmit} className="desctext">
+      <form onSubmit={handleSubmit} className="desctext" noValidate>
         {/* Full Name */}
         <div className="relative mb-5">
           <input
             type="text"
             name="fullName"
+            placeholder=" "
             value={formData.fullName}
             onChange={handleChange}
-            className={`caption w-full border-b ${formErrors.fullName ? "border-red-600" : "border-gray-400"} pt-7 pb-4 peer`}
+            className={`peer caption w-full border-b bg-transparent outline-none
+      ${formErrors.fullName ? "border-[#B00003]" : "border-gray-400"}
+      pt-7 pb-4`}
           />
-          <label className="absolute left-0 top-1/2 -translate-y-1/2 text-gray-400 peer-focus:top-2 peer-focus:text-xs peer-focus:text-gray-400 peer-valid:top-2 peer-valid:text-xs">
-            <span className="text-red-600">*</span> Full Name
+        <label className="absolute left-0 top-1/2 -translate-y-1/2 text-[#979795]
+      transition-all duration-300 pointer-events-none
+ 
+      /* When input is focused */
+      peer-focus:top-2 peer-focus:text-xs peer-focus:text-[#979795]
+ 
+      /* When input has NO value (placeholder shown) */
+      peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-base
+ 
+      /* When input has value (label stays up) */
+      peer-not-placeholder-shown:top-2 peer-not-placeholder-shown:text-xs">
+
+            <span className="text-[#B00003]">*</span> Full Name
           </label>
-          {formErrors.fullName && <p className="text-red-600 text-sm mt-1">{formErrors.fullName}</p>}
+          {formErrors.fullName && <p className="text-[#B00003]  formerrortext mt-1">{formErrors.fullName}</p>}
         </div>
 
         {/* Mobile & Email */}
@@ -140,25 +154,10 @@ export default function Newcontact() {
             <input
               type="tel"
               name="mobile"
+              placeholder=" "
               value={formData.mobile}
               onChange={handleChange}
-              className="caption w-full border-b border-gray-400 pt-7 pb-4 peer"
-            />
-            <label className="absolute left-0 top-1/2 -translate-y-1/2 text-gray-400 peer-focus:top-2 peer-focus:text-xs peer-focus:text-gray-400 peer-valid:top-2 peer-valid:text-xs">
-              <span className="text-red-600">*</span> Mobile
-            </label>
-            {formErrors.mobile && <p className="text-red-600 text-sm mt-1">{formErrors.mobile}</p>}
-          </div>
-
-          <div className="relative">
-            <input
-              type="email"
-              name="email"
-              value={formData.email}
-              onChange={handleChange}
-              className="caption  text-[#3C3C3B]
-              w-full border-b border-[#979795] focus:border-black outline-none
-              pt-7 pb-4 peer"
+              className="caption w-full border-b bg-transparent outline-none pt-7 pb-4 peer"
             />
             <label className="absolute left-0 top-1/2 -translate-y-1/2 text-[#979795]
       transition-all duration-300 pointer-events-none
@@ -171,9 +170,34 @@ export default function Newcontact() {
  
       /* When input has value (label stays up) */
       peer-not-placeholder-shown:top-2 peer-not-placeholder-shown:text-xs">
-              <span className="text-red-600">*</span> Email
+              <span className="text-[#B00003]">*</span> Mobile
             </label>
-            {formErrors.email && <p className="text-red-600 text-sm mt-1">{formErrors.email}</p>}
+            {formErrors.mobile && <p className="text-[#B00003]  formerrortext mt-1">{formErrors.mobile}</p>}
+          </div>
+
+          <div className="relative">
+            <input
+              type="email"
+              name="email"
+              placeholder=" "
+              value={formData.email}
+              onChange={handleChange}
+              className="caption w-full border-b bg-transparent outline-none pt-7 pb-4 peer"
+            />
+            <label className="absolute left-0 top-1/2 -translate-y-1/2 text-[#979795]
+      transition-all duration-300 pointer-events-none
+ 
+      /* When input is focused */
+      peer-focus:top-2 peer-focus:text-xs peer-focus:text-[#979795]
+ 
+      /* When input has NO value (placeholder shown) */
+      peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-base
+ 
+      /* When input has value (label stays up) */
+      peer-not-placeholder-shown:top-2 peer-not-placeholder-shown:text-xs">
+              <span className="text-[#B00003]">*</span> Email
+            </label>
+            {formErrors.email && <p className="text-[#B00003] formerrortext mt-1">{formErrors.email}</p>}
           </div>
         </div>
 
@@ -182,17 +206,28 @@ export default function Newcontact() {
           <input
             type="text"
             name="city"
+            placeholder=" "
             value={formData.city}
             onChange={handleChange}
-            className="caption w-full border-b border-gray-400 pt-7 pb-2 peer"
+            className="caption w-full border-b bg-transparent outline-none pt-7 pb-4 peer"
           />
-          <label className="absolute left-0 top-1/2 -translate-y-1/2 text-gray-400 peer-focus:top-2 peer-focus:text-xs peer-focus:text-gray-400 peer-valid:top-2 peer-valid:text-xs">
-            <span className="text-red-600">*</span> City
+         <label className="absolute left-0 top-1/2 -translate-y-1/2 text-[#979795]
+      transition-all duration-300 pointer-events-none
+ 
+      /* When input is focused */
+      peer-focus:top-2 peer-focus:text-xs peer-focus:text-[#979795]
+ 
+      /* When input has NO value (placeholder shown) */
+      peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-base
+ 
+      /* When input has value (label stays up) */
+      peer-not-placeholder-shown:top-2 peer-not-placeholder-shown:text-xs">
+            <span className="text-[#B00003]">*</span> City
           </label>
-          {formErrors.city && <p className="text-red-600 text-sm mt-1">{formErrors.city}</p>}
+          {formErrors.city && <p className="text-[#B00003] formerrortext mt-1">{formErrors.city}</p>}
         </div>
 
-        {error && <p className="text-red-600 text-sm mb-4">{error}</p>}
+        {error && <p className="text-[#B00003] text-sm mb-4">{error}</p>}
 
         <button className="button1" disabled={loading || isSubmitted}>
           {loading ? "Submitting..." : "Book"}
