@@ -16,7 +16,7 @@ export async function POST(request) {
       const verifyData = await verifyRes.json();
         console.log(verifyData,"verifyDataverifyDataverifyDataverifyData" ,process.env.RECAPTCHA_SECRET_KEY);
       if (!verifyData.success || verifyData.score < 0.5) {
-        return new Response(JSON.stringify({ error: "reCAPTCHA verification failed" }), { status: 400 });
+        return new Response(JSON.stringify({ verifyRes,error: "reCAPTCHA verification failed" }), { status: 400 });
       }
   
       // Submit to Zoho
