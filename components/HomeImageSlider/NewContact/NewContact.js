@@ -123,10 +123,10 @@ useEffect(() => {
 // Show success message
 setSuccessMessage("Your form has been submitted successfully! Redirecting to kerovit.com");
 
- // Redirect after 5 seconds
+ // Redirect after 2 seconds
       setTimeout(() => {
         window.location.href = "https://kerovit.com/";
-      }, 5000);
+      }, 1000);
     } catch (err) {
       setError(err.message);
       console.error(err);
