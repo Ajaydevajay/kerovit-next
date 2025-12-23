@@ -98,9 +98,10 @@ export default async function Page({ params }) {
             can feel, touch, and picture clearly. In every corner, inspiration
             finds you effortlessly.
           </p>
-          <button className="button1 mt-6">
+          {/* <button className="button1 mt-6">
             <span className="btn-text">Book a Tour</span>
-          </button>
+          </button> */}
+           <Booktours />
         </div>
 
         <div className="md:w-2/5 space-y-8 flex justify-end">
