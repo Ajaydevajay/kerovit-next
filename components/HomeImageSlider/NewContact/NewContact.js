@@ -6,7 +6,7 @@ const RECAPTCHA_SITE_KEY = "6Le-0RosAAAAAGjYHU1IzFO_EE3uwt05kzqSrLRK";
 export default function Newcontact() {
   const [formData, setFormData] = useState({
     leadSource: "Website",
-    landingPage: "kolkata",
+    landingPage: "",
     fullName: "",
     email: "",
     mobile: "",
@@ -16,7 +16,17 @@ export default function Newcontact() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [successMessage, setSuccessMessage] = useState("");
 
+// Set landingPage dynamically
+useEffect(() => {
+  setFormData((prev) => ({
+    ...prev,
+    landingPage: window.location.href, // full URL
+  }));
+}, []);
+
+   // Load reCAPTCHA script
   useEffect(() => {
     const scriptId = "recaptcha-v3";
     if (!document.getElementById(scriptId)) {
@@ -39,6 +49,8 @@ export default function Newcontact() {
 
     setFormData((prev) => ({ ...prev, [name]: newValue }));
 
+
+     // Inline validation
     let errorMessage = "";
     if (name === "fullName" && !newValue.trim()) errorMessage = "Name is required";
     if (name === "email") {
@@ -60,6 +72,7 @@ export default function Newcontact() {
     setLoading(true);
     setError(null);
     setIsSubmitted(true);
+    setSuccessMessage("");
 
     // Final validation
     const errors = {};
@@ -81,7 +94,7 @@ export default function Newcontact() {
     try {
       // Get reCAPTCHA token
       const token = await window.grecaptcha.execute(RECAPTCHA_SITE_KEY, { action: "submit" });
-      debugger
+
       // Send form + token to your backend API
       const res = await fetch("/api/zoho/lead", {
         method: "POST",
@@ -95,15 +108,22 @@ export default function Newcontact() {
         throw new Error(result.error || "Form submission failed");
       }
 
+
+      // Reset form
       setFormData({
         leadSource: "Website",
-        landingPage: "kolkata",
+        landingPage: window.location.href,
         fullName: "",
         email: "",
         mobile: "",
         city: "",
       });
 
+
+// Show success message
+setSuccessMessage("Your form has been submitted successfully! Redirecting to kerovit.com");
+
+ // Redirect after 5 seconds
       setTimeout(() => {
         window.location.href = "https://kerovit.com/";
       }, 5000);
@@ -228,6 +248,7 @@ export default function Newcontact() {
         </div>
 
         {error && <p className="text-[#B00003] text-sm mb-4">{error}</p>}
+        {successMessage && <p className="text-green-600 text-sm mb-4">{successMessage}</p>}
 
         <button className="button1" disabled={loading || isSubmitted}>
           {loading ? "Submitting..." : "Book"}

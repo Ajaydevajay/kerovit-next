@@ -14,7 +14,7 @@ export async function POST(request) {
       leadSource,
       landingPage,
     } = body;
-    console.log(body, "bodybodybody");
+    
     if (!recaptchaToken) {
       return new Response(
         JSON.stringify({ error: "reCAPTCHA token missing" }),
@@ -28,11 +28,7 @@ export async function POST(request) {
       { method: "POST" }
     );
     const verifyData = await verifyRes.json();
-    console.log(
-      verifyData,
-      "verifyDataverifyDataverifyDataverifyData",
-      process.env.RECAPTCHA_SECRET_KEY
-    );
+   
     if (!verifyData.success || verifyData.score < 0.5) {
       return new Response(
         JSON.stringify({
