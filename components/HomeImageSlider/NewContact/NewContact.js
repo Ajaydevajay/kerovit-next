@@ -81,7 +81,7 @@ export default function Newcontact() {
     try {
       // Get reCAPTCHA token
       const token = await window.grecaptcha.execute(RECAPTCHA_SITE_KEY, { action: "submit" });
-
+      debugger
       // Send form + token to your backend API
       const res = await fetch("/api/zoho/lead", {
         method: "POST",
