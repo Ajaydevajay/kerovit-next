@@ -37,8 +37,6 @@ export async function POST(request) {
       return new Response(
         JSON.stringify({
           verifyData,
-          RECAPTCHA_SECRET_K: "verifyDataverifyDataverifyDataverifyData",
-          RECAPTCHA_SECRET_KEY: process.env.RECAPTCHA_SECRET_KEY,
           error: "reCAPTCHA verification failed",
         }),
         { status: 400 }
