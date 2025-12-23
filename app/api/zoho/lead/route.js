@@ -1,3 +1,6 @@
+const RECAPTCHA_SECRET_KEY = "6Le-0RosAAAAAClInCxxQrpd5ZrWwnlQ06QgYzfz"
+const ZOHO_API_KEY = "1003.578c95da7fc447a87b7b3bfcc672d98d.54efb85fcfaafc399e6356502991521d"
+
 // app/api/zoho/lead/route.js
 export async function POST(request) {
   try {
@@ -21,7 +24,7 @@ export async function POST(request) {
 
     // Verify reCAPTCHA
     const verifyRes = await fetch(
-      `https://www.google.com/recaptcha/api/siteverify?secret=${process.env.RECAPTCHA_SECRET_KEY}&response=${recaptchaToken}`,
+      `https://www.google.com/recaptcha/api/siteverify?secret=${RECAPTCHA_SECRET_KEY}&response=${recaptchaToken}`,
       { method: "POST" }
     );
     const verifyData = await verifyRes.json();
@@ -44,7 +47,7 @@ export async function POST(request) {
 
     // Submit to Zoho
     const zohoRes = await fetch(
-      `https://www.zohoapis.in/crm/v7/functions/leadcreationapi1/actions/execute?auth_type=apikey&zapikey=${process.env.ZOHO_API_KEY}`,
+      `https://www.zohoapis.in/crm/v7/functions/leadcreationapi1/actions/execute?auth_type=apikey&zapikey=${ZOHO_API_KEY}`,
       {
         method: "POST",
         headers: { "Content-Type": "application/json" },
