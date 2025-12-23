@@ -147,7 +147,7 @@ export default function Home() {
             </div>
 
             <div className="md:text-right">
-           <p className="footer_label_first">info@kerovit.com</p>
+            <p className="footer_label_first"> <a href="mailto:contact@kerovit.com">contact@kerovit.com</a></p>
               <p className="footer_label_first mt-4">1800 570 7800</p>
             </div>
           </div>
